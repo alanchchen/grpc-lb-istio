@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend
+spec:
+  selector:
+    app: backend
+  ports:
+  - port: 8000
+    name: grpc
+    targetPort: 8000
